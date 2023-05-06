@@ -69,15 +69,34 @@ img {
   overflow: hidden;
 }
 
+/* Mobile Phone styles & > */
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 428px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
-/* Header styles */
+/* Tablet Phone styles & > */
 
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Desktop styles & > */
+
+@media only screen and (min-widht: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+
+/* display none block */
+
+/* .container { width: 1158px; margin-right: auto; margin-left: auto; padding: 0 15px; } */ /* Header styles */
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
