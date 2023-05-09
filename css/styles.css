@@ -88,7 +88,7 @@ img {
 
 /* Desktop styles & > */
 
-@media only screen and (min-widht: 1158px) {
+@media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
@@ -96,13 +96,34 @@ img {
 
 /* display none block  для кастамор*/
 
-/* .container { width: 1158px; margin-right: auto; margin-left: auto; padding: 0 15px; } */
-
 /* Header styles */
+
+/* Mobile Phone styles & > */
+
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
+/* Tablet Phone styles & > */
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+/* Desktop styles & > */
+
+@media only screen and (min-width: 1158px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header-cont {
@@ -110,9 +131,19 @@ img {
   align-items: center;
 }
 
-.header-logo {
+.main-nav {
+  display: flex;
+  align-items: center;
   margin-right: auto;
+}
 
+@media only screen and (max-width: 767px) {
+  .header-nav-details {
+    display: none;
+  }
+}
+
+.header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -123,22 +154,31 @@ img {
   color: var(--iris);
 }
 
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
+}
+
 .header-logo-second {
   font-family: "Raleway", sans-serif;
   color: var(--navy-blue);
 }
 
+.header-contacts {
+  font-style: normal;
+}
+
 @media only screen and (max-width: 767px) {
-  .header-nav-adress,
   .header-contacts {
     display: none;
   }
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
 }
 
 .header-nav-list {
@@ -188,10 +228,6 @@ img {
 
 .header-item:last-child {
   margin-right: 0px;
-}
-
-.header-contacts {
-  font-style: normal;
 }
 
 .header-nav-contacts-list {
@@ -1107,4 +1143,8 @@ input[type="checkbox"]:checked
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.menu-toggle-icon {
+  stroke: var(--navy-blue);
 }
