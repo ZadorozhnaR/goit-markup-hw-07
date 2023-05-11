@@ -69,6 +69,10 @@ img {
   overflow: hidden;
 }
 
+.page-box {
+  overflow: hidden;
+}
+
 /* Mobile Phone styles & > */
 .container {
   min-width: 320px;
@@ -288,7 +292,7 @@ img {
     margin-bottom: 0px;
     margin-right: 40px;
   }
-  ,
+
   .header-contacts-item:last-child {
     margin-right: 0px;
   }
@@ -1153,8 +1157,11 @@ input[type="checkbox"]:checked
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-right: 35px;
+  background-color: var(--white);
   z-index: 999;
 
   transform: translateX(100%);
@@ -1169,7 +1176,7 @@ input[type="checkbox"]:checked
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--white);
 }
 
 .mobile-menu {
@@ -1182,8 +1189,20 @@ input[type="checkbox"]:checked
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+
   text-decoration: none;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--navy-blue);
+}
+
+.mob-menu-link.current {
+  color: var(--ocean);
 }
 
 .menu-toggle-icon {
@@ -1202,20 +1221,14 @@ input[type="checkbox"]:checked
   width: 24px;
   height: 24px;
 
-  background-color: var(--cornflower);
+  background-color: rgb(231, 233, 252, 0.1);
+  border: 1px solid rgb(46, 47, 66, 0.1);
   border-radius: 50%;
-  border: none;
 
   cursor: pointer;
 
   transition: background-color var(--transition-standart),
     color var(--transition-standart);
-}
-
-.menu-close-btn:hover,
-.menu-close-btn:focus {
-  background-color: var(--ocean);
-  color: var(--white);
 }
 
 .menu-close-icon {
@@ -1227,6 +1240,40 @@ input[type="checkbox"]:checked
   gap: 56px;
 }
 
+.socials-link-mob-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+
 .mobile-contacts {
   margin-bottom: 48px;
+}
+.mobile-contacts-num {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+
+  color: var(--iris);
+}
+
+.mobile-contacts-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.mobile-contact-item:not(:last-child) {
+  margin-bottom: 40px;
 }
