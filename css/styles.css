@@ -302,8 +302,8 @@ img {
 
 .hero {
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 
   max-width: 1440px;
   margin-left: auto;
@@ -319,17 +319,43 @@ img {
   background-size: cover;
 }
 
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
+
 .hero-title {
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  max-width: 320px;
   margin-right: auto;
   margin-left: auto;
 
+  text-align: center;
+  text-transform: capitalize;
+
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 36px;
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 
 .hero-btn {
