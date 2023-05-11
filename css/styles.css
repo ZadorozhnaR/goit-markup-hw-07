@@ -413,10 +413,6 @@ img {
   padding-bottom: 120px;
 }
 
-/* .about-list {
-  display: flex;
-} */
-
 /* Desktop styles & > */
 
 @media only screen and (min-width: 1158px) {
@@ -428,12 +424,28 @@ img {
 .about-title-name {
   margin-bottom: 8px;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
   letter-spacing: 0.02em;
 
   color: var(--navy-blue);
+}
+
+/* Desktop styles & > */
+
+@media only screen and (min-width: 1158px) {
+  .about-title-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: none;
+  }
 }
 
 .about-undertitle {
