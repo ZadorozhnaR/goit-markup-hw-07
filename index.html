@@ -23,7 +23,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="page">
+    <div class="page-box">
     <!-- Header section -->
     <header class="header">
       <div class="header-cont container">
@@ -69,8 +70,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu">
           <svg class="menu-toggle-icon"
-            width="24"
-            height="24">
+            width="32"
+            height="22">
           <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
@@ -616,6 +617,7 @@
         </div>
       </div>
     </footer> -->
+    </div>
 
     <!-- Modal window -->
     <!-- <div class="backdrop is-hidden" data-modal>
@@ -728,15 +730,15 @@
       </button>
 
       <ul class="mobile-menu list">
-        <li><a href="" class="link">Studio</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Contacts</a></li>
+        <li class="mobile-menu-item"><a href="./index.html" class="mob-menu-link current link">Studio</a></li>
+        <li class="mobile-menu-item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li class="mobile-menu-item"><a  href="" class="link">Contacts</a></li>
       </ul>
     
 
     <ul class="mobile-contacts list">
-      <li><a class="link" href="tel:">+11 (000) 111-11-11</a></li>
-      <li><a class="link" href="mailto:">info@devstudio.com</a></li>
+      <li class="mobile-contact-item"><a class="mobile-contacts-num link" href="tel:">+11 (000) 111-11-11</a></li>
+      <li class="mobile-contact-item"><a class="mobile-contacts-mail link" href="mailto:">info@devstudio.com</a></li>
     </ul>
 
     <ul class="socials-mob-menu-list list">
@@ -805,3 +807,5 @@
     <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
+
+
