@@ -323,7 +323,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/_background@1x_mob.jpg);
+      url(../images/hero/background@1x_mob.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -333,7 +333,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/_background@2x_mob.jpg);
+        url(../images/hero/background@2x_mob.jpg);
     }
   }
 }
@@ -344,7 +344,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/_background@1x_tabl.jpg);
+      url(../images/hero/background@1x_tabl.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -354,7 +354,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/_background@2x_tabl.jpg);
+        url(../images/hero/background@2x_tabl.jpg);
     }
   }
 }
