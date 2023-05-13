@@ -75,7 +75,7 @@ img {
   overflow: hidden;
 }
 
-/* Mobile Phone styles & !> */
+/* Mobile Phone styles & > */
 .container {
   min-width: 320px;
   max-width: 428px;
