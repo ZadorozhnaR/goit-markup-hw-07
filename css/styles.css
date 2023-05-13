@@ -1208,10 +1208,10 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) rotate(0) scale(1);
 
-  width: 408px;
+  width: 392px;
   min-height: 584px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
   padding-bottom: 24px;
   padding-top: 72px;
 
@@ -1221,6 +1221,23 @@ img {
   border-radius: 4px;
 
   transition: transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    padding-top: 72px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .modal {
+    padding-right: 25px;
+    padding-left: 23px;
+  }
 }
 
 .backdrop.is-hidden .modal {
