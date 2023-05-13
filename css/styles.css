@@ -608,7 +608,32 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  row-gap: 72px;
+  width: 264px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 64px;
+    column-gap: 24px;
+    width: 552px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    row-gap: 0px;
+    width: 1128px;
+  }
 }
 
 .team-item {
