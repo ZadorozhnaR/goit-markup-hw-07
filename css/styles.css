@@ -317,6 +317,8 @@ img {
   background-size: cover;
 }
 
+/* Mobile Phone styles & > */
+
 @media only screen and (max-width: 428px) {
   .hero {
     background-image: linear-gradient(
@@ -359,6 +361,8 @@ img {
   }
 }
 
+/* Tablet styles & > */
+
 @media only screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(
@@ -381,7 +385,7 @@ img {
   }
 }
 
-/* Tablet styles & > */
+/* Mobile Phone styles & > */
 
 @media only screen and (min-width: 429px) {
   .hero {
@@ -389,7 +393,7 @@ img {
   }
 }
 
-/* Desktop styles & > */
+/* Tablet styles & > */
 
 @media only screen and (min-width: 769px) {
   .hero {
@@ -397,12 +401,16 @@ img {
   }
 }
 
+/* Desktop styles & > */
+
 @media only screen and (min-width: 1158px) {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
   }
 }
+
+/* Mobile Phone styles & > */
 
 .hero-title {
   margin-bottom: 72px;
@@ -439,6 +447,8 @@ img {
     margin-bottom: 48px;
   }
 }
+
+/* Mobile Phone styles & > */
 
 .hero-btn {
   display: block;
@@ -477,8 +487,6 @@ img {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-
-/* Desktop styles & > */
 
 @media only screen and (min-width: 1158px) {
   .about-section {
@@ -522,8 +530,6 @@ img {
   color: var(--navy-blue);
 }
 
-/* Desktop styles & > */
-
 @media only screen and (min-width: 1158px) {
   .about-title-name {
     font-weight: 500;
@@ -538,8 +544,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
-/* Desktop styles & > */
 
 @media only screen and (min-width: 1158px) {
   .about-undertitle {
@@ -578,13 +582,9 @@ img {
   margin-right: 0px;
 }
 
-/* Mobile Phone styles & > */
-
 .about-icons-list {
   display: none;
 }
-
-/* Desktop styles & > */
 
 @media only screen and (min-width: 1158px) {
   .about-icons-list {
@@ -620,8 +620,6 @@ img {
   }
 }
 
-/* Desktop styles & > */
-
 .projects-section {
   padding-bottom: 120px;
 }
@@ -642,8 +640,6 @@ img {
 
   color: var(--navy-blue);
 }
-
-/* Section 3 styles */
 
 .team-section {
   background-color: var(--cloud);
