@@ -764,14 +764,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 396px;
+  max-width: 396px;
   column-gap: 16px;
   row-gap: 72px;
 }
 
 @media only screen and (min-width: 768px) {
   .customer-icons-list {
-    width: 552px;
+    max-width: 552px;
     column-gap: 24px;
     margin-left: auto;
     margin-right: auto;
@@ -781,7 +781,7 @@ img {
 @media only screen and (min-width: 1158px) {
   .customer-icons-list {
     flex-wrap: nowrap;
-    width: 1128px;
+    max-width: 1128px;
     column-gap: 24px;
     row-gap: 0px;
   }
@@ -957,9 +957,15 @@ img {
   text-align: center;
 }
 
+@media only screen and (max-width: 427px) {
+  .subscribe-box {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .subscribe-box {
-    width: 453px;
+    max-width: 453px;
   }
 }
 
@@ -1051,11 +1057,22 @@ img {
   }
 }
 
-.footer-form-field {
-  display: flex;
-  flex-wrap: wrap;
-  width: 396px;
-  gap: 16px;
+@media only screen and (max-width: 427px) {
+  .footer-form-field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%px;
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  .footer-form-field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 396px;
+    gap: 16px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1261,25 +1278,50 @@ img {
   pointer-events: none;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0) scale(1);
+@media only screen and (max-width: 427px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0) scale(1);
 
-  width: 392px;
-  min-height: 584px;
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-bottom: 24px;
-  padding-top: 72px;
+    max-width: 392px;
+    min-width: 288px;
+    min-height: 584px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    padding-top: 72px;
 
-  background-color: var(--dairy);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+    background-color: var(--dairy);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
-  transition: transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+}
+@media only screen and (min-width: 428px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0) scale(1);
+
+    width: 392px;
+    min-height: 584px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    padding-top: 72px;
+
+    background-color: var(--dairy);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition: transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1430,13 +1472,26 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-form-agreement {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 24px;
-  justify-content: center;
+@media only screen and (max-width: 427px) {
+  .modal-form-agreement {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  .modal-form-agreement {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
 }
 
 .modal-form-agreement-box {
@@ -1528,7 +1583,7 @@ input[type="checkbox"]:checked
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -1634,6 +1689,13 @@ input[type="checkbox"]:checked
   gap: 56px;
 }
 
+@media only screen and (max-width: 427px) {
+  .socials-mob-menu-list {
+    display: flex;
+    gap: 28px;
+  }
+}
+
 .socials-link-mob-menu {
   display: flex;
   justify-content: center;
@@ -1649,15 +1711,31 @@ input[type="checkbox"]:checked
 .mobile-contacts {
   margin-bottom: 48px;
 }
-.mobile-contacts-num {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  margin-bottom: 40px;
 
-  color: var(--iris);
+@media only screen and (max-width: 427px) {
+  .mobile-contacts-num {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+    color: var(--iris);
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  .mobile-contacts-num {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+    color: var(--iris);
+  }
 }
 
 .mobile-contacts-mail {
