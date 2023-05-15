@@ -589,34 +589,22 @@ img {
   margin-right: 0px;
 }
 
-.about-icons-list {
+.about-icons-images {
   display: none;
 }
 
 @media only screen and (min-width: 1158px) {
-  .about-icons-list {
+  .about-icons-images {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+
+    background: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
   }
-}
-
-.about-icons-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-icons-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-
-  background: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
 }
 
 /* Section 2 styles */
